@@ -6,9 +6,9 @@ This project demonstrates a robust MLOps workflow for operationalizing an XGBoos
 It has two main components:
 
 - **Executable examples:** there are two executable scripts that present examples on how MLFlow experiment tracking and Dagster orchestration would work.
-- **Mock/General Layout Design:** there are mock files and folders that illustrate how I'd design the and run the workflow in production. This includes two sample scripts for implementing a sensor and a schedule with Dagster, a folder structure for the whole project, and an architecture/pipeline diagram that explains how it would work.
+- **Mock/General Layout Design:** there are mock files and folders that illustrate how I'd design and run the workflow in production. This includes two sample scripts for implementing a sensor and a schedule with Dagster, a folder structure for the whole project, and an architecture/pipeline diagram that explains how it would work.
 
-If you have any questions or concerns, please feel free to reach to me at [urbdaniel.86@gmail.com].
+If you have any questions or concerns, please contact me at [urbdaniel.86@gmail.com].
 
 Cheers,
 
@@ -79,21 +79,21 @@ Cheers,
 
 ## Dagster Orchestration
 
-- **Pipeline:** Defined in `pipeline/churn_pipeline.py`, orchestrates data loading, transformation, model loading, prediction, and output. If run as it is, it'll take the provided sample data (X_test_sample_1.json) and generate predictions locally for testing purposes.
+- **Pipeline:** Defined in `pipeline/churn_pipeline.py`, orchestrates data loading, transformation, model loading, prediction, and output. If run as is, it'll take the provided sample data (X_test_sample_1.json) and generate predictions locally for testing purposes.
 - **Scheduling:** (Bonus) `pipeline/churn_schedule.py` shows an example of a weekly schedule that triggers the pipeline.
 - **Sensor:** (Bonus) `pipeline/churn_sensor.py` shows an example that would trigger the pipeline when a new file appears in `data/incoming/`.
 ---
 
 ## Model Serving
 
-- **Batch Serving:** As it is, the pipeline is designed for batch prediction and can be run via bash. However, in production it would be triggered by new data (sensor) or on a schedule (weekly) as showed in the developed examples. I chose batch since there's no real-time need to get the predictions. I'd use metadata tagging for traceability and simplicity.
-- **Versioning:** Each prediction output is timestamped and model version is tracked via MLflow.
+- **Batch Serving:** As it is, the pipeline is designed for batch prediction and can be run via bash. However, in production, it would be triggered by new data (sensor) or on a schedule (weekly) as shown in the developed examples. I chose batch since there's no real-time need to get the predictions. I'd use metadata tagging for traceability and simplicity.
+- **Versioning:** Each prediction output is timestamped, and model version is tracked via MLflow.
 
 ---
 
 ## CI/CD & Infrastructure as Code
 
-- **CI/CD:** As it is, GitHub holds the repository with all the neccesary components. In production, it'll be used for version control and standard CI/CD workflows.
+- **CI/CD:** As it is, GitHub holds the repository with all the necessary components. In production, it'll be used for version control and standard CI/CD workflows.
 - **IaC:** Example Terraform folder structure for provisioning MLflow backend and compute resources is provided.
 
 ---
@@ -116,6 +116,6 @@ Cheers,
 
 ## Suggested Improvements
 
-- Add advanced monitoring and alerting o every critical step and develop troubleshooting protocols.
+- Add advanced monitoring and alerting on every critical step and develop troubleshooting protocols.
 - Improve error handling.
 - Develop observability and retraining logic.
