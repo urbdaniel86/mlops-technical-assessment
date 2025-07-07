@@ -1,1 +1,0 @@
-# mlops-technical-assessment
