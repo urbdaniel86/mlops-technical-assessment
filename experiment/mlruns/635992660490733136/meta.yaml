@@ -1,0 +1,6 @@
+artifact_location: file:///Users/dramirez/Documents/Personal/Better%20Collective/mlops-technical-assessment/experiment/mlruns/635992660490733136
+creation_time: 1751848732214
+experiment_id: '635992660490733136'
+last_update_time: 1751848732214
+lifecycle_stage: active
+name: churn_xgboost_experiment

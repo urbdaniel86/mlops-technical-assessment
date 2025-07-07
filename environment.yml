@@ -1,0 +1,14 @@
+name: mlops-churn
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - xgboost
+  - pip:
+      - mlflow
+      - dagster
+      - dagit
+      - pandas
+      - scikit-learn

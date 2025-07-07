@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/dramirez/Documents/Personal/Better%20Collective/mlops-technical-assessment/experiment/mlruns/635992660490733136/26961a3aed214209a61edc2b9d6cf7ac/artifacts
+end_time: 1751848735584
+entry_point_name: ''
+experiment_id: '635992660490733136'
+lifecycle_stage: active
+run_id: 26961a3aed214209a61edc2b9d6cf7ac
+run_name: churn_xgboost_model_run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751848732747
+status: 3
+tags: []
+user_id: dramirez

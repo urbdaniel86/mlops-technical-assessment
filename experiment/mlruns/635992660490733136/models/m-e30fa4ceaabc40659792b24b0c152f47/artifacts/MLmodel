@@ -1,0 +1,68 @@
+artifact_path: file:///Users/dramirez/Documents/Personal/Better%20Collective/mlops-technical-assessment/experiment/mlruns/635992660490733136/models/m-e30fa4ceaabc40659792b24b0c152f47/artifacts
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.10.18
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.core.Booster
+    model_format: xgb
+    xgb_version: 3.0.2
+is_signature_from_type_hint: false
+mlflow_version: 3.1.1
+model_id: m-e30fa4ceaabc40659792b24b0c152f47
+model_size_bytes: 392542
+model_uuid: m-e30fa4ceaabc40659792b24b0c152f47
+prompts: null
+run_id: 26961a3aed214209a61edc2b9d6cf7ac
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "total_deposit", "required": true}, {"type":
+    "double", "name": "total_handle", "required": true}, {"type": "double", "name":
+    "total_ngr", "required": true}, {"type": "long", "name": "months_active", "required":
+    true}, {"type": "boolean", "name": "brand_id_AZ", "required": true}, {"type":
+    "boolean", "name": "brand_id_CA", "required": true}, {"type": "boolean", "name":
+    "brand_id_CO", "required": true}, {"type": "boolean", "name": "brand_id_DC", "required":
+    true}, {"type": "boolean", "name": "brand_id_ER", "required": true}, {"type":
+    "boolean", "name": "brand_id_GM", "required": true}, {"type": "boolean", "name":
+    "brand_id_IA", "required": true}, {"type": "boolean", "name": "brand_id_IN", "required":
+    true}, {"type": "boolean", "name": "brand_id_IS", "required": true}, {"type":
+    "boolean", "name": "brand_id_KS", "required": true}, {"type": "boolean", "name":
+    "brand_id_KY", "required": true}, {"type": "boolean", "name": "brand_id_LA", "required":
+    true}, {"type": "boolean", "name": "brand_id_MA", "required": true}, {"type":
+    "boolean", "name": "brand_id_MD", "required": true}, {"type": "boolean", "name":
+    "brand_id_MI", "required": true}, {"type": "boolean", "name": "brand_id_MS", "required":
+    true}, {"type": "boolean", "name": "brand_id_NC", "required": true}, {"type":
+    "boolean", "name": "brand_id_NE", "required": true}, {"type": "boolean", "name":
+    "brand_id_NJ", "required": true}, {"type": "boolean", "name": "brand_id_NO", "required":
+    true}, {"type": "boolean", "name": "brand_id_NV", "required": true}, {"type":
+    "boolean", "name": "brand_id_NY", "required": true}, {"type": "boolean", "name":
+    "brand_id_OH", "required": true}, {"type": "boolean", "name": "brand_id_PA", "required":
+    true}, {"type": "boolean", "name": "brand_id_TN", "required": true}, {"type":
+    "boolean", "name": "brand_id_US", "required": true}, {"type": "boolean", "name":
+    "brand_id_VA", "required": true}, {"type": "boolean", "name": "brand_id_WV", "required":
+    true}, {"type": "boolean", "name": "brand_id_WY", "required": true}, {"type":
+    "boolean", "name": "ben_login_id_BCCSB22", "required": true}, {"type": "boolean",
+    "name": "ben_login_id_BCUSA22L", "required": true}, {"type": "boolean", "name":
+    "ben_login_id_BCUSA22N", "required": true}, {"type": "boolean", "name": "ben_login_id_BCUSA22NP",
+    "required": true}, {"type": "boolean", "name": "ben_login_id_actionnetwork", "required":
+    true}, {"type": "boolean", "name": "ben_login_id_starsportsmx", "required": true},
+    {"type": "boolean", "name": "ben_login_id_wedgetraffic", "required": true}, {"type":
+    "boolean", "name": "player_reg_product_BETTING", "required": true}, {"type": "boolean",
+    "name": "player_reg_product_BINGO", "required": true}, {"type": "boolean", "name":
+    "player_reg_product_CASINO", "required": true}, {"type": "boolean", "name": "player_reg_product_POKER",
+    "required": true}, {"type": "boolean", "name": "player_reg_product_RACEBOOK",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-07-07 00:38:52.779532'

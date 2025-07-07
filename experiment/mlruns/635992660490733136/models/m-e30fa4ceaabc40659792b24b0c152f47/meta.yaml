@@ -1,0 +1,10 @@
+artifact_location: file:///Users/dramirez/Documents/Personal/Better%20Collective/mlops-technical-assessment/experiment/mlruns/635992660490733136/models/m-e30fa4ceaabc40659792b24b0c152f47/artifacts
+creation_timestamp: 1751848732774
+experiment_id: '635992660490733136'
+last_updated_timestamp: 1751848735572
+model_id: m-e30fa4ceaabc40659792b24b0c152f47
+model_type: null
+name: model
+source_run_id: 26961a3aed214209a61edc2b9d6cf7ac
+status: 2
+status_message: null
